@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Хоккей - Russian Soft Power in the Global Arena</title>
+<link rel="icon" href="favicon.png">
+<style>
+:root{--red:#8b0000;--gold:#d4af37;--bg:#fffaf8;--text:#222}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia, 'Times New Roman', serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.header{background:linear-gradient(180deg,var(--red),#6e0000);color:var(--gold);padding:18px 24px;text-align:center}
+.nav{background:#8b0000;padding:10px 24px;display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+.nav a{color:ivory;text-decoration:none;font-weight:600}
+.container{max-width:980px;margin:28px auto;padding:0 18px}
+.hero{background:linear-gradient(90deg, rgba(211,175,55,0.04), rgba(139,0,0,0.02));padding:18px;border-left:6px solid var(--gold);border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
+.card{background:white;padding:14px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.06);text-align:left}
+.img{width:100%;height:auto;border-radius:8px;display:block;box-shadow:0 6px 18px rgba(0,0,0,0.08);transition:transform .4s ease}
+.img:hover{transform:translateY(-6px)}
+.caption{font-size:14px;color:#444;margin-top:8px;font-style:italic}
+.lang {position:fixed;right:14px;top:14px;background:rgba(255,255,255,0.06);padding:6px 8px;border-radius:6px;color:var(--gold)}
+.fade-in{animation:fadeIn .9s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+footer{background:#4b0000;color:var(--gold);padding:14px 18px;text-align:center;margin-top:30px;font-size:14px}
+@media(max-width:720px){.nav{gap:12px;padding:8px}.container{padding:0 12px}}
+</style>
+</head>
+<body>
+<div class="lang"><a href="hockey.html">EN</a> | <a href="hockey_ru.html">RU</a></div>
+<header class="header"><h1 style="margin:0">Хоккей</h1></header>
+<nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="ballet.html">Russian Ballet</a>
+  <a href="hockey.html">Ice Hockey</a>
+  <a href="redsquare.html">Red Square</a>
+  <a href="team.html">Team</a>
+</nav>
+<main class="container">
+<section class="hero fade-in"><h2>Ice Hockey</h2><p class="caption">Спортивное мастерство на международной арене.</p></section>
+<section class="grid">
+  <article class="card fade-in"><img class="img" src="https://tse4.mm.bing.net/th/id/OIP.FYu3fYlpPL2mncOB_AjuqgHaEK?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=114&c=7&dpr=2&o=7&rm=3" alt="hockey1"><p class="caption">Training and youth development programs.</p></article>
+  <article class="card fade-in"><img class="img" src="https://tse4.mm.bing.net/th/id/OIP.g-Vbix05dqS2EuXww0RJ7gHaE7?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="hockey2"><p class="caption">International stars and club competition.</p></article>
+</section>
+</main><footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer></body></html>
