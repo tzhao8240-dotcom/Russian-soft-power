@@ -2,43 +2,50 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Red Square - Russian Soft Power in the Global Arena</title>
+<title>Red Square - Russian Soft Power</title>
 <link rel="icon" href="favicon.png">
-<style>
-:root{--red:#8b0000;--gold:#d4af37;--bg:#fffaf8;--text:#222}
-*{box-sizing:border-box}
-body{margin:0;font-family:Georgia, 'Times New Roman', serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
-.header{background:linear-gradient(180deg,var(--red),#6e0000);color:var(--gold);padding:18px 24px;text-align:center}
-.nav{background:#8b0000;padding:10px 24px;display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
-.nav a{color:ivory;text-decoration:none;font-weight:600}
-.container{max-width:980px;margin:28px auto;padding:0 18px}
-.hero{background:linear-gradient(90deg, rgba(211,175,55,0.04), rgba(139,0,0,0.02));padding:18px;border-left:6px solid var(--gold);border-radius:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
-.card{background:white;padding:14px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.06);text-align:left}
-.img{width:100%;height:auto;border-radius:8px;display:block;box-shadow:0 6px 18px rgba(0,0,0,0.08);transition:transform .4s ease}
-.img:hover{transform:translateY(-6px)}
-.caption{font-size:14px;color:#444;margin-top:8px;font-style:italic}
-.lang {position:fixed;right:14px;top:14px;background:rgba(255,255,255,0.06);padding:6px 8px;border-radius:6px;color:var(--gold)}
-.fade-in{animation:fadeIn .9s ease both}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-footer{background:#4b0000;color:var(--gold);padding:14px 18px;text-align:center;margin-top:30px;font-size:14px}
-@media(max-width:720px){.nav{gap:12px;padding:8px}.container{padding:0 12px}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="lang"><a href="redsquare.html">EN</a> | <a href="redsquare_ru.html">RU</a></div>
-<header class="header"><h1 style="margin:0">Red Square</h1></header>
+<button class="langbtn" onclick="setLang(document.documentElement.lang==='en' ? 'zh' : 'en')">中文/EN</button>
+<header class="header"><h1 data-en="Red Square" data-zh=""></h1></header>
 <nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="ballet.html">Russian Ballet</a>
-  <a href="hockey.html">Ice Hockey</a>
-  <a href="redsquare.html">Red Square</a>
-  <a href="team.html">Team</a>
+  <a href="index.html" data-en="Home" data-zh="首页"></a>
+  <a href="ballet.html" data-en="Ballet" data-zh="芭蕾"></a>
+  <a href="hockey.html" data-en="Ice Hockey" data-zh="冰球"></a>
+  <a href="redsquare.html" data-en="Red Square" data-zh="红场"></a>
+  <a href="team.html" data-en="Team" data-zh="团队"></a>
 </nav>
 <main class="container">
-<section class="hero fade-in"><h2>Red Square</h2><p class="caption">Central plaza with layered historical meanings.</p></section>
-<section class="grid">
-  <article class="card fade-in"><img class="img" src="https://mf.b37mrtl.ru/rbthmedia/images/2023.01/original/63c16af21a1ce978eb00cf97.jpg" alt="rs1"><p class="caption">Monuments, parades, and public memory.</p></article>
-  <article class="card fade-in"><img class="img" src="https://pic.52112.com/180717/JPG-180717_281/RTGDCMT53k_small.jpg" alt="rs2"><p class="caption">Touristic and ceremonial functions.</p></article>
+
+<section class="hero fade-in"><div class="overlay"><h2 data-en="Red Square" data-zh="红场"></h2>
+<p data-en="Red Square in Moscow functions as a symbolic urban space where history, ceremony, and national identity converge. As a locus of state parades, public commemorations, and tourism, the square communicates narratives of continuity and cultural depth."
+       data-zh="莫斯科的红场是历史、仪式与民族认同交汇的象征性城市空间。作为国家阅兵、公共纪念和旅游的中心，红场传达着连续性与文化深度的叙事。"></p></div></section>
+
+<section class="container">
+  <div class="card fade-in">
+    <h3 data-en="Historical Layers" data-zh="历史层面"></h3>
+    <p data-en="From medieval marketplaces to imperial processions and Soviet ceremonies, Red Square's layered past gives it a unique resonance. Its architecture — notably St. Basil’s Cathedral and the Kremlin walls — anchors national memory."
+       data-zh="从中世纪市场到帝国游行和苏联仪式，红场的历史层层叠叠，赋予其独特的共鸣。其建筑，尤其是圣瓦西里大教堂和克里姆林宫城墙，巩固了民族记忆。"></p>
+  </div>
+
+  <div class="card fade-in">
+    <h3 data-en="Cultural & Touristic Role" data-zh="文化与旅游角色"></h3>
+    <p data-en="As a tourist destination and ceremonial space, Red Square attracts global attention. Photographs, festivals, and official events shape external perceptions of Russia as a nation with deep historical roots."
+       data-zh="作为旅游胜地和仪式空间，红场吸引全球关注。照片、节庆和官方活动塑造了外界对俄罗斯为具有深厚历史根基国家的看法。"></p>
+  </div>
+
+  <div class="card fade-in">
+    <h3 data-en="Soft Power in Practice" data-zh="软实力实践"></h3>
+    <p data-en="Red Square works alongside cultural exports and sporting success to present a multifaceted image abroad. Its iconic status amplifies messages conveyed through arts, media, and international events."
+       data-zh="红场与文化出口和体育成功一同构建了向外界呈现的多面形象。其标志性地位放大了通过艺术、媒体和国际活动传达的信息。"></p>
+  </div>
+
+  <div class="smallnav"><a class="btn" href="hockey.html" data-en="← Previous: Ice Hockey" data-zh="← 上一页：冰球"></a> <a class="btn" href="team.html" data-en="Next: Team →" data-zh="下一页：团队 →"></a></div>
 </section>
-</main><footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer></body></html>
+
+</main>
+<footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer>
+<script src="script.js"></script>
+</body>
+</html>

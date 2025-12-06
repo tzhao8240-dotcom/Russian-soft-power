@@ -2,43 +2,50 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ice Hockey - Russian Soft Power in the Global Arena</title>
+<title>Ice Hockey - Russian Soft Power</title>
 <link rel="icon" href="favicon.png">
-<style>
-:root{--red:#8b0000;--gold:#d4af37;--bg:#fffaf8;--text:#222}
-*{box-sizing:border-box}
-body{margin:0;font-family:Georgia, 'Times New Roman', serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
-.header{background:linear-gradient(180deg,var(--red),#6e0000);color:var(--gold);padding:18px 24px;text-align:center}
-.nav{background:#8b0000;padding:10px 24px;display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
-.nav a{color:ivory;text-decoration:none;font-weight:600}
-.container{max-width:980px;margin:28px auto;padding:0 18px}
-.hero{background:linear-gradient(90deg, rgba(211,175,55,0.04), rgba(139,0,0,0.02));padding:18px;border-left:6px solid var(--gold);border-radius:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
-.card{background:white;padding:14px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.06);text-align:left}
-.img{width:100%;height:auto;border-radius:8px;display:block;box-shadow:0 6px 18px rgba(0,0,0,0.08);transition:transform .4s ease}
-.img:hover{transform:translateY(-6px)}
-.caption{font-size:14px;color:#444;margin-top:8px;font-style:italic}
-.lang {position:fixed;right:14px;top:14px;background:rgba(255,255,255,0.06);padding:6px 8px;border-radius:6px;color:var(--gold)}
-.fade-in{animation:fadeIn .9s ease both}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-footer{background:#4b0000;color:var(--gold);padding:14px 18px;text-align:center;margin-top:30px;font-size:14px}
-@media(max-width:720px){.nav{gap:12px;padding:8px}.container{padding:0 12px}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="lang"><a href="hockey.html">EN</a> | <a href="hockey_ru.html">RU</a></div>
-<header class="header"><h1 style="margin:0">Ice Hockey</h1></header>
+<button class="langbtn" onclick="setLang(document.documentElement.lang==='en' ? 'zh' : 'en')">中文/EN</button>
+<header class="header"><h1 data-en="Ice Hockey" data-zh=""></h1></header>
 <nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="ballet.html">Russian Ballet</a>
-  <a href="hockey.html">Ice Hockey</a>
-  <a href="redsquare.html">Red Square</a>
-  <a href="team.html">Team</a>
+  <a href="index.html" data-en="Home" data-zh="首页"></a>
+  <a href="ballet.html" data-en="Ballet" data-zh="芭蕾"></a>
+  <a href="hockey.html" data-en="Ice Hockey" data-zh="冰球"></a>
+  <a href="redsquare.html" data-en="Red Square" data-zh="红场"></a>
+  <a href="team.html" data-en="Team" data-zh="团队"></a>
 </nav>
 <main class="container">
-<section class="hero fade-in"><h2>Ice Hockey</h2><p class="caption">Sporting excellence on the international stage.</p></section>
-<section class="grid">
-  <article class="card fade-in"><img class="img" src="https://tse4.mm.bing.net/th/id/OIP.FYu3fYlpPL2mncOB_AjuqgHaEK?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=114&c=7&dpr=2&o=7&rm=3" alt="hockey1"><p class="caption">Training and youth development programs.</p></article>
-  <article class="card fade-in"><img class="img" src="https://tse4.mm.bing.net/th/id/OIP.g-Vbix05dqS2EuXww0RJ7gHaE7?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="hockey2"><p class="caption">International stars and club competition.</p></article>
+
+<section class="hero fade-in"><div class="overlay"><h2 data-en="Ice Hockey" data-zh="冰球"></h2>
+<p data-en="Ice hockey is among Russia's most visible sporting exports. From Soviet-era dominance to contemporary leagues and NHL stars, hockey contributes to national pride and international visibility. Athletic success in tournaments such as the Olympics and World Championships projects an image of competitiveness and modernity."
+       data-zh="冰球是俄罗斯最具可见性的体育出口之一。从苏联时代的统治地位到当代联赛和NHL明星，冰球为国家自豪感和国际能见度做出贡献。奥运会和世界锦标赛等赛事中的成功展示了竞争力与现代性。"></p></div></section>
+
+<section class="container">
+  <div class="card fade-in">
+    <h3 data-en="Development & Institutions" data-zh="发展与机构"></h3>
+    <p data-en="National programs, youth academies, and professional clubs sustain a pipeline of talent. Ice hockey's institutional networks — from local clubs to international leagues — facilitate cultural exchanges and media coverage."
+       data-zh="国家项目、青训学院和职业俱乐部维持着人才输送系统。从地方俱乐部到国际联赛，冰球的机构网络促进了文化交流和媒体报道。"></p>
+  </div>
+
+  <div class="card fade-in">
+    <h3 data-en="International Achievements" data-zh="国际成就"></h3>
+    <p data-en="Russia and the former Soviet Union have a long record of success in Olympic and World Championship competition. Such achievements create enduring narratives of national excellence that resonate with international audiences."
+       data-zh="俄罗斯及前苏联在奥运会和世界锦标赛中拥有长期的成功记录。这些成就创造了持久的国家优秀叙事，与国际观众产生共鸣。"></p>
+  </div>
+
+  <div class="card fade-in">
+    <h3 data-en="Soft Power Potential" data-zh="软实力潜能"></h3>
+    <p data-en="Beyond competition, ice hockey functions as a social connector — fan cultures, youth programs, and international club tours build informal diplomacy and positive associations."
+       data-zh="除了竞技层面，冰球还作为社会连接器——球迷文化、青训项目和国际俱乐部巡回带来非正式外交与积极联想。"></p>
+  </div>
+
+  <div class="smallnav"><a class="btn" href="ballet.html" data-en="← Previous: Ballet" data-zh="← 上一页：芭蕾"></a> <a class="btn" href="redsquare.html" data-en="Next: Red Square →" data-zh="下一页：红场 →"></a></div>
 </section>
-</main><footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer></body></html>
+
+</main>
+<footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer>
+<script src="script.js"></script>
+</body>
+</html>

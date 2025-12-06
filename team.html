@@ -2,48 +2,41 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Team - Russian Soft Power in the Global Arena</title>
+<title>Project Team - Russian Soft Power</title>
 <link rel="icon" href="favicon.png">
-<style>
-:root{--red:#8b0000;--gold:#d4af37;--bg:#fffaf8;--text:#222}
-*{box-sizing:border-box}
-body{margin:0;font-family:Georgia, 'Times New Roman', serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
-.header{background:linear-gradient(180deg,var(--red),#6e0000);color:var(--gold);padding:18px 24px;text-align:center}
-.nav{background:#8b0000;padding:10px 24px;display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
-.nav a{color:ivory;text-decoration:none;font-weight:600}
-.container{max-width:980px;margin:28px auto;padding:0 18px}
-.hero{background:linear-gradient(90deg, rgba(211,175,55,0.04), rgba(139,0,0,0.02));padding:18px;border-left:6px solid var(--gold);border-radius:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
-.card{background:white;padding:14px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.06);text-align:left}
-.img{width:100%;height:auto;border-radius:8px;display:block;box-shadow:0 6px 18px rgba(0,0,0,0.08);transition:transform .4s ease}
-.img:hover{transform:translateY(-6px)}
-.caption{font-size:14px;color:#444;margin-top:8px;font-style:italic}
-.lang {position:fixed;right:14px;top:14px;background:rgba(255,255,255,0.06);padding:6px 8px;border-radius:6px;color:var(--gold)}
-.fade-in{animation:fadeIn .9s ease both}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-footer{background:#4b0000;color:var(--gold);padding:14px 18px;text-align:center;margin-top:30px;font-size:14px}
-@media(max-width:720px){.nav{gap:12px;padding:8px}.container{padding:0 12px}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="lang"><a href="team.html">EN</a> | <a href="team_ru.html">RU</a></div>
-<header class="header"><h1 style="margin:0">Team</h1></header>
+<button class="langbtn" onclick="setLang(document.documentElement.lang==='en' ? 'zh' : 'en')">中文/EN</button>
+<header class="header"><h1 data-en="Project Team" data-zh=""></h1></header>
 <nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="ballet.html">Russian Ballet</a>
-  <a href="hockey.html">Ice Hockey</a>
-  <a href="redsquare.html">Red Square</a>
-  <a href="team.html">Team</a>
+  <a href="index.html" data-en="Home" data-zh="首页"></a>
+  <a href="ballet.html" data-en="Ballet" data-zh="芭蕾"></a>
+  <a href="hockey.html" data-en="Ice Hockey" data-zh="冰球"></a>
+  <a href="redsquare.html" data-en="Red Square" data-zh="红场"></a>
+  <a href="team.html" data-en="Team" data-zh="团队"></a>
 </nav>
 <main class="container">
-<section class="hero fade-in"><h2>Project Team</h2><p class="caption">Project created by students for an academic assignment.</p></section>
-<section class="card fade-in" style="margin-top:18px">
-  <h3 style="margin-top:0">Team Members</h3>
-  <ul style="text-align:left;max-width:600px;margin:10px auto 18px">
-    <li><strong>Ван Идань</strong> (Wang Yidan) — Research & Content</li>
-    <li><strong>Сайиньцзия</strong> (Sayinjia) — Visual Design & Media</li>
-    <li><strong>Чжао Тэн</strong> (Zhao Teng) — Technical & Deployment</li>
-  </ul>
-  <p class="caption">Affiliation: Students Media Project — 2025</p>
+
+<section class="hero fade-in"><div class="overlay"><h2 data-en="Project Team" data-zh="项目团队"></h2>
+<p data-en="This site was produced as a student media project, combining research, design, and technical work." data-zh="本网站为学生媒体项目，结合研究、设计与技术工作。"></p></div></section>
+
+<section class="container">
+  <div class="card fade-in">
+    <h3 data-en="Team Members" data-zh="团队成员"></h3>
+    <ul>
+      <li><strong data-en="Ван Идань" data-zh="Ван Идань"></strong> — <span data-en="Research & Content" data-zh="研究与内容"></span></li>
+      <li><strong data-en="Сайиньцзия" data-zh="Сайиньцзия"></strong> — <span data-en="Visual Design & Media" data-zh="视觉设计与媒体"></span></li>
+      <li><strong data-en="Чжао Тэн" data-zh="Чжао Тэн"></strong> — <span data-en="Technical & Deployment" data-zh="技术与部署"></span></li>
+    </ul>
+    <p class="caption" data-en="Affiliation: Students Media Project — 2025" data-zh="所属：学生媒体项目 — 2025"></p>
+  </div>
+
+  <div class="smallnav"><a class="btn" href="redsquare.html" data-en="← Previous" data-zh="← 返回"></a> <a class="btn" href="index.html" data-en="Back to Home" data-zh="返回首页"></a></div>
 </section>
-</main><footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer></body></html>
+
+</main>
+<footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer>
+<script src="script.js"></script>
+</body>
+</html>

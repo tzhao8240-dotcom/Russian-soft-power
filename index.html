@@ -2,65 +2,55 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Russian Soft Power in the Global Arena - Russian Soft Power in the Global Arena</title>
+<title>Russian Soft Power in the Global Arena - Russian Soft Power</title>
 <link rel="icon" href="favicon.png">
-<style>
-:root{--red:#8b0000;--gold:#d4af37;--bg:#fffaf8;--text:#222}
-*{box-sizing:border-box}
-body{margin:0;font-family:Georgia, 'Times New Roman', serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
-.header{background:linear-gradient(180deg,var(--red),#6e0000);color:var(--gold);padding:18px 24px;text-align:center}
-.nav{background:#8b0000;padding:10px 24px;display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
-.nav a{color:ivory;text-decoration:none;font-weight:600}
-.container{max-width:980px;margin:28px auto;padding:0 18px}
-.hero{background:linear-gradient(90deg, rgba(211,175,55,0.04), rgba(139,0,0,0.02));padding:18px;border-left:6px solid var(--gold);border-radius:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
-.card{background:white;padding:14px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.06);text-align:left}
-.img{width:100%;height:auto;border-radius:8px;display:block;box-shadow:0 6px 18px rgba(0,0,0,0.08);transition:transform .4s ease}
-.img:hover{transform:translateY(-6px)}
-.caption{font-size:14px;color:#444;margin-top:8px;font-style:italic}
-.lang {position:fixed;right:14px;top:14px;background:rgba(255,255,255,0.06);padding:6px 8px;border-radius:6px;color:var(--gold)}
-.fade-in{animation:fadeIn .9s ease both}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-footer{background:#4b0000;color:var(--gold);padding:14px 18px;text-align:center;margin-top:30px;font-size:14px}
-@media(max-width:720px){.nav{gap:12px;padding:8px}.container{padding:0 12px}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="lang"><a href="index.html">EN</a> | <a href="index_ru.html">RU</a></div>
-<header class="header"><h1 style="margin:0">Russian Soft Power in the Global Arena</h1></header>
+<button class="langbtn" onclick="setLang(document.documentElement.lang==='en' ? 'zh' : 'en')">中文/EN</button>
+<header class="header"><h1 data-en="Russian Soft Power in the Global Arena" data-zh=""></h1></header>
 <nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="ballet.html">Russian Ballet</a>
-  <a href="hockey.html">Ice Hockey</a>
-  <a href="redsquare.html">Red Square</a>
-  <a href="team.html">Team</a>
+  <a href="index.html" data-en="Home" data-zh="首页"></a>
+  <a href="ballet.html" data-en="Ballet" data-zh="芭蕾"></a>
+  <a href="hockey.html" data-en="Ice Hockey" data-zh="冰球"></a>
+  <a href="redsquare.html" data-en="Red Square" data-zh="红场"></a>
+  <a href="team.html" data-en="Team" data-zh="团队"></a>
 </nav>
 <main class="container">
+
 <section class="hero fade-in">
-  <h2>Discover Russia’s Cultural Soft Power</h2>
-  <p style="color:#444">This site highlights three emblematic elements of Russia's soft power: ballet, ice hockey, and Red Square. Use the navigation above to explore each section.</p>
+  <div class="overlay">
+    <h2 data-en="Cultural Influence Beyond Borders" data-zh="跨越国界的文化影响力"></h2>
+    <p data-en="Russia’s soft power extends through its cultural achievements such as ballet, sports, historical architecture, and global media influence."
+       data-zh="俄罗斯的软实力通过其文化成就扩展，包括芭蕾、体育、历史建筑和全球媒体影响力。"></p>
+  </div>
 </section>
 
 <section class="grid">
   <article class="card fade-in">
-    <h3>Russian Ballet</h3>
-    <p class="caption">Artistic excellence, global tours, and a long cultural tradition.</p>
-    <img class="img" src="https://tse1.mm.bing.net/th/id/OIP.sgsOYmoSV0pS5NCLeMYfawHaE8?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=134&c=7&dpr=2&o=7&rm=3" alt="Ballet 1">
-    <p class="caption">Bolshoi / Mariinsky — flagship institutions.</p>
+    <h3 data-en="Russian Ballet" data-zh="俄罗斯芭蕾"></h3>
+    <img class="img" src="https://tse1.mm.bing.net/th/id/OIP.sgsOYmoSV0pS5NCLeMYfawHaE8?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=134&c=7&dpr=2&o=7&rm=3" alt="ballet">
+    <p class="caption" data-en="Historic companies, global tours, and artistic diplomacy." data-zh="历史悠久的剧团、全球巡演与艺术外交。"></p>
+    <div class="smallnav"><a class="btn" href="ballet.html" data-en="Learn more" data-zh="了解更多"></a></div>
   </article>
 
   <article class="card fade-in">
-    <h3>Ice Hockey</h3>
-    <p class="caption">Popular sport with international achievements and passionate fandom.</p>
-    <img class="img" src="https://tse4.mm.bing.net/th/id/OIP.FYu3fYlpPL2mncOB_AjuqgHaEK?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=114&c=7&dpr=2&o=7&rm=3" alt="Hockey 1">
-    <p class="caption">A field where Russia projects energy and competitiveness.</p>
+    <h3 data-en="Ice Hockey" data-zh="冰球"></h3>
+    <img class="img" src="https://tse4.mm.bing.net/th/id/OIP.FYu3fYlpPL2mncOB_AjuqgHaEK?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=114&c=7&dpr=2&o=7&rm=3" alt="hockey">
+    <p class="caption" data-en="A sporting arena where national identity and international success meet." data-zh="体育舞台上民族认同与国际成功的交汇。"></p>
+    <div class="smallnav"><a class="btn" href="hockey.html" data-en="Learn more" data-zh="了解更多"></a></div>
   </article>
 
   <article class="card fade-in">
-    <h3>Red Square</h3>
-    <p class="caption">Historic plaza and symbol of national identity.</p>
-    <img class="img" src="https://mf.b37mrtl.ru/rbthmedia/images/2023.01/original/63c16af21a1ce978eb00cf97.jpg" alt="Red Square 1">
-    <p class="caption">Iconic architecture and public space.</p>
+    <h3 data-en="Red Square" data-zh="红场"></h3>
+    <img class="img" src="https://mf.b37mrtl.ru/rbthmedia/images/2023.01/original/63c16af21a1ce978eb00cf97.jpg" alt="redsquare">
+    <p class="caption" data-en="A historic public space that embodies national memory and ceremony." data-zh="承载民族记忆与仪式的历史公共空间。"></p>
+    <div class="smallnav"><a class="btn" href="redsquare.html" data-en="Learn more" data-zh="了解更多"></a></div>
   </article>
 </section>
-</main><footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer></body></html>
+
+</main>
+<footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer>
+<script src="script.js"></script>
+</body>
+</html>
