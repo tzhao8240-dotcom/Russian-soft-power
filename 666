@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Russian Soft Power</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="langbtn">中文/EN</button>
+  <header class="header"><h1 data-en="Russian Soft Power" data-zh="俄罗斯软实力"></h1></header>
+
+  <nav class="nav">
+    <a href="index.html" data-en="Home" data-zh="首页"></a>
+    <a href="ballet.html" data-en="Ballet" data-zh="芭蕾"></a>
+    <a href="hockey.html" data-en="Ice Hockey" data-zh="冰球"></a>
+    <a href="redsquare.html" data-en="Red Square" data-zh="红场"></a>
+    <a href="team.html" data-en="Team" data-zh="团队"></a>
+  </nav>
+
+  <main class="container">
+    <section class="hero fade-in" aria-hidden="false">
+      <div class="bg" style="background-image:url('https://russianculture.cn/ru/wp-content/uploads/2023/08/3-14-1024x683.jpg'); filter:grayscale(0%) brightness(.88) contrast(.95);"></div>
+      <div class="overlay">
+        <h2 data-en="Cultural Influence Beyond Borders" data-zh="跨越国界的文化影响力"></h2>
+        <p data-en="This project examines three emblematic elements of Russian soft power — ballet, ice hockey and Red Square — focusing on how culture, sport and heritage shape international perceptions."
+           data-zh="本项目考察俄罗斯软实力的三个典型要素：芭蕾、冰球与红场，重点研究文化、体育与遗产如何塑造国际认知。"></p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card fade-in">
+        <h3 data-en="Russian Ballet" data-zh="俄罗斯芭蕾"></h3>
+        <img class="img" src="https://tse1.mm.bing.net/th/id/OIP.sgsOYmoSV0pS5NCLeMYfawHaE8?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=134&c=7&dpr=2&o=7&rm=3" alt="Ballet">
+        <p class="caption" data-en="Bolshoi, Mariinsky and the tradition of excellence." data-zh="莫斯科大剧院、马林斯基与卓越传统。"></p>
+        <div class="smallnav"><a class="btn" href="ballet.html" data-en="Learn more" data-zh="了解更多"></a></div>
+      </article>
+
+      <article class="card fade-in">
+        <h3 data-en="Ice Hockey" data-zh="冰球"></h3>
+        <img class="img" src="https://tse4.mm.bing.net/th/id/OIP.FYu3fYlpPL2mncOB_AjuqgHaEK?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=114&c=7&dpr=2&o=7&rm=3" alt="Hockey">
+        <p class="caption" data-en="International competitions, national leagues and global stars." data-zh="国际赛事、国内联赛与世界明星。"></p>
+        <div class="smallnav"><a class="btn" href="hockey.html" data-en="Learn more" data-zh="了解更多"></a></div>
+      </article>
+
+      <article class="card fade-in">
+        <h3 data-en="Red Square" data-zh="红场"></h3>
+        <img class="img" src="https://mf.b37mrtl.ru/rbthmedia/images/2023.01/original/63c16af21a1ce978eb00cf97.jpg" alt="Red Square">
+        <p class="caption" data-en="The historical and ceremonial heart of Moscow." data-zh="莫斯科的历史与仪式中心。"></p>
+        <div class="smallnav"><a class="btn" href="redsquare.html" data-en="Learn more" data-zh="了解更多"></a></div>
+      </article>
+    </section>
+  </main>
+
+  <footer>© 2025 Russian Soft Power in the Global Arena · Student project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
