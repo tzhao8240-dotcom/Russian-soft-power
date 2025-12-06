@@ -1,3 +1,43 @@
+/* -- 主页淡淡背景效果（可粘到 style.css） -- */
+.hero{
+  position:relative;
+  min-height:240px;        /* 可按需调节高度 */
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: #d4af37;          /* 金色文字 */
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-image: url('https://tse3.mm.bing.net/th/id/OIP.rzvy0fpTXAzmaVPIJdAErAHaE8?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=202&h=134&c=7&dpr=2&o=7&rm=3');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 视差效果：背景相对固定，内容滚动 */
+  filter: grayscale(0%) brightness(0.75) contrast(0.95);
+  opacity: 0.28; /* 这里控制“淡”的程度：数字越小越淡，0.2-0.4 推荐 */
+  z-index: 0;
+  transform: translateZ(0);
+}
+
+/* 遮罩可以让文字更清晰（如果需要更暗/更淡可调 rgba 的 alpha） */
+.hero .overlay{
+  position: relative;
+  z-index: 2;
+  padding: 32px; 
+  background: rgba(255,255,255,0.00); /* 透明；若需更暗可改为 rgba(0,0,0,0.15) */
+  max-width: 1000px;
+  text-align:center;
+}
+
+/* 小屏幕微调 */
+@media (max-width:720px){
+  .hero{min-height:180px}
+  .hero .overlay{padding:18px}
+}
 
 :root{
   --red:#8b0000;
