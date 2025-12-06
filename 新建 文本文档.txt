@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Russian Soft Power in the Global Arena</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #2d2d2d;
+        }
+        header {
+            background-color: #8b0000;
+            padding: 15px 0;
+            color: #f2d16b;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #b30000;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 12px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-top: 10px;
+        }
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #8b0000;
+            color: #f2d16b;
+        }
+    </style>
+</head>
+<body>
+    <header>Russian Soft Power in the Global Arena</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ballet.html">Ballet</a>
+        <a href="ice-hockey.html">Ice Hockey</a>
+        <a href="red-square.html">Red Square</a>
+        <a href="about.html">Team</a>
+    </nav>
+
+    <div class="container">
+        <h2>Discover Russia’s Cultural Soft Power</h2>
+        <p>A nation rich in cultural heritage and global influence.</p>
+
+        <img src="https://tse1.mm.bing.net/th/id/OIP.TXsE-E0ssgTx0DvnmgUPEgHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Russia Image">
+        <p class="caption">Symbolic imagery of Russian heritage</p>
+    </div>
+
+    <footer>
+        Made for academic project purposes only.
+    </footer>
+</body>
+</html>
